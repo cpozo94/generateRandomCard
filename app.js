@@ -2,7 +2,12 @@
 const container = document.querySelector(".container")
 const card = document.querySelector(".card")
 const button = document.querySelector(".button")
+const width = document.getElementById("width")
+const height = document.getElementById("height")
+const enviar = document.getElementById("btnEnviar")
 
+
+//"px"
 
 
 
