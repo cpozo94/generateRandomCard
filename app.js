@@ -2,7 +2,7 @@
 const container = document.querySelector(".container")
 const card = document.querySelector(".card")
 const button = document.querySelector(".button")
-const width = document.getElementById("width")
+const width = document.querySelector("#width")
 const height = document.getElementById("height")
 const enviar = document.getElementById("btnEnviar")
 
@@ -50,6 +50,12 @@ const generateRandomCard = () => {
 
 //cada vez que se pulsa el botón, se activa la función
 button.addEventListener("click",generateRandomCard)
+
+
+width.addEventListener("change", (evento) => {
+    card.style.width= `${evento.target.value}px`
+
+})
 
 
 //lo que sucede cada vez que la página se recarga
