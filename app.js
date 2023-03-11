@@ -6,11 +6,6 @@ let width = document.querySelector("#width")
 let height = document.getElementById("height")
 let enviar = document.getElementById("btnEnviar")
 
-
-//"px"
-
-
-
 //función para generar la carta aleatoria
 let randomSuit = () => {
     let suit = ["hearts", "diamonds", "spades", "clubs"];
@@ -53,7 +48,7 @@ button.addEventListener("click",generateRandomCard)
 
 let updateHeightWidthBtn = document.querySelector("#update-height-width-btn");
 
-
+//accedemos al botón definido arriba y modificamos card (previamente definido tb),
 updateHeightWidthBtn.addEventListener("click", () => {
   card = document.querySelector(".card")
   card.style.height = `${height.value}px`;
@@ -63,7 +58,8 @@ updateHeightWidthBtn.addEventListener("click", () => {
 
 
 
-//lo que sucede cada vez que la página se recarga
+//lo que sucede cada vez que la página se recarga, se ha generado una carta
+//cada X tiempo se genera una nueva carta
 window.onload = () => {
     generateRandomCard();
     setInterval(()=>{
