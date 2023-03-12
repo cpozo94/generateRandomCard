@@ -55,3 +55,11 @@ body{
     margin-top:10px;
     
 }
+.inputs{
+    display:grid;
+    margin:auto;
+    margin-top:20px;
+    width: 200px;
+    
+
+}
